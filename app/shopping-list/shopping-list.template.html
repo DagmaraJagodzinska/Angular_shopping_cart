@@ -1,2 +1,13 @@
 
-    <h1>hello</h1>
+    <div class="row">
+            <div class="media" ng-repeat="item in vm.displayItems" >
+                <img ng-src="{{item.picture}}" alt="Generic placeholder image">
+                <p>{{item.name}}</p>
+                <button ng-click="vm.add(item)"> add</button>
+            </div>
+            <p>Tyle dodanych: {{vm.cart.cartProducts.length}}
+    </div>
+    <div ng-repeat="item in vm.cart.cartProducts">
+        <p>{{item.name}}</p>
+        <p> zatyle hajsików {{item.price}}</p>
+    </div>    

@@ -6,8 +6,21 @@
     .component('shoppingList', {
         templateUrl:'shopping-list/shopping-list.template.html',
         controllerAs: "vm",
-        controller: function ($http, $log){
+        controller: function ($http, $log,){
         var vm = this;
+
+        vm.cart = {
+            sum: 0,
+            cartProducts: []
+        };
+        console.log(vm.cart);
+
+       vm.add = function (item) {
+            vm.cart.sum = vm.cart.sum + item.price;
+            console.log('suma wszytskich cen '+ vm.cart.sum + 'cena pojedyncza jednego elementu dodanego ' + item.price);
+            vm.cart.cartProducts.push(item);
+            console.log('tyle elementow'+ vm.cart.cartProducts.length);
+        };
 
         $http({
             method: 'GET',
@@ -15,6 +28,8 @@
 
         }).then(function successCallback(data) {
             vm.myData = data.data;
+
+            vm.displayItems = vm.myData
             console.log(vm.myData);
   
         }, function errorCallback(response) {

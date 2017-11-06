@@ -1,38 +1,28 @@
 [
   {
-    "_id": "59ff7e05b4a6e5ce32a2ee32",
+
     "picture": "http://placehold.it/100x100",
     "price": 771,
-    "name": "Logan"
+    "name": "rzecz 1"
   },
   {
-    "_id": "59ff7e058dfb18b2095423b8",
     "picture": "http://placehold.it/100x100",
     "price": 103,
-    "name": "House"
+    "name": "rzecz 2"
   },
   {
-    "_id": "59ff7e059bea6c605035f147",
     "picture": "http://placehold.it/100x100",
     "price": 440,
-    "name": "Dora"
+    "name": "rzecz 3"
   },
   {
-    "_id": "59ff7e0574627444cf192821",
     "picture": "http://placehold.it/100x100",
     "price": 513,
-    "name": "Hardy"
+    "name": "rzecz 4"
   },
   {
-    "_id": "59ff7e05b4296e24e441581c",
     "picture": "http://placehold.it/100x100",
     "price": 1911,
-    "name": "Gayle"
-  },
-  {
-    "_id": "59ff7e059c84fa57dd74f4a7",
-    "picture": "http://placehold.it/100x100",
-    "price": 603,
-    "name": "Duke"
+    "name": "rzecz 5"
   }
 ]
