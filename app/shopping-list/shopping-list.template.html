@@ -1,13 +1,14 @@
 
     <div class="row">
-            <div class="media" ng-repeat="item in vm.displayItems" >
-                <img ng-src="{{item.picture}}" alt="Generic placeholder image">
-                <p>{{item.name}}</p>
-                <button ng-click="vm.add(item)"> add</button>
-            </div>
-            <p>Tyle dodanych: {{vm.cart.cartProducts.length}}
+        <div class="media" ng-repeat="item in vm.products" style="border: 1px solid red;" >
+            <img ng-src="{{item.picture}}" alt="Generic placeholder image">
+            <p>{{item.name}}</p>
+             <p>{{item.price}}</p>
+            <button ng-click="vm.add(item)"> add</button>
+        </div>
     </div>
-    <div ng-repeat="item in vm.cart.cartProducts">
+    <p>Tyle dodanych: {{vm.cart.cartProducts.length}}
+    <div ng-repeat="item in vm.cart.cartProducts track by $index">
         <p>{{item.name}}</p>
         <p> zatyle hajsików {{item.price}}</p>
     </div>    
