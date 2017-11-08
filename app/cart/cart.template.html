@@ -1,5 +1,6 @@
+
 <div style="border: 1px solid;">
-    <h4>Łączna cena :{{vm.cart.sum}}</h4>
+    <h4>Tyle zapłacisz jak masz hajsik :{{vm.cart.sum}}</h4>
     <button ng-click="vm.clearAll()">clear all</button>
         <div style="display: inline-block; width:150px; border: 1px solid green" ng-repeat="record in vm.cart.cartProducts track by $index">
                 <p>{{record.name}}</p>
